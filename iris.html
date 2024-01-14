@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="https://iris.vit.edu.in/img/favicon.png">
+    <link rel="stylesheet" href="iris.css">
+    <title>IRIS 2024</title>
+</head>
+<body>
+    <div class="sphere-container" onclick="burstIntoBubbles()">
+        <div class="sphere">
+            <span class="title">IRIS 2024</span>
+        </div>
+    </div>
+
+    <script>
+        function burstIntoBubbles() {
+            document.body.classList.add('burst-animation');
+            setTimeout(function () {
+                window.location.href = 'intoiris.html';
+            }, 1000);
+        }
+    </script>
+</body>
+</html>

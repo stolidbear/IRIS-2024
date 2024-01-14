@@ -1,0 +1,49 @@
+body {
+    margin: 0;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: black;
+    transition: background-color 1s ease; 
+}
+
+.sphere-container {
+    cursor: pointer;
+}
+
+.sphere {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    background-color: lightgreen;
+    border-radius: 50%;
+    box-shadow: 0 0 50px rgba(0, 128, 0, 0.7);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.title {
+    color: white;
+    font-size: 2em;
+    font-weight: bold;
+    position: absolute;
+}
+
+
+.burst-animation .sphere {
+    animation: burst 1s ease-out;
+}
+
+@keyframes burst {
+    0% {
+        transform: scale(1);
+        opacity: 1;
+    }
+    100% {
+        transform: scale(2);
+        opacity: 0;
+    }
+}

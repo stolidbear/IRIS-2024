@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="https://iris.vit.edu.in/img/favicon.png">
+    <link rel="stylesheet" href="intoiris.css">
+    <title>Into IRIS</title>
+</head>
+<body>
+    <div class="navigation-panel">
+        <div class="menu-icon" onclick="toggleMenu()">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+        </div>
+        <a href="iris.html" class="nav-link home-link">Home</a>
+        <div class="menu-items">
+            <a href="https://www.ieee.org/membership/index.html" class="nav-link" target="_blank">IEEE Membership</a>
+            <a href="#" class="nav-link">Connect With Us</a>
+        </div>
+        <a href="https://ieee.vit.edu.in/" class="navbar-brand" target="_blank"><img src="https://iris.vit.edu.in/img/logo.png" width="170px" alt=""
+            srcset="" /></a>
+    </div>
+    <div class="container">
+        <div class="rectangle-container"></div>
+        <div class="rectangle-container"></div>
+        <div class="rectangle-container"></div>
+        <div class="rectangle-container"></div>
+    </div>
+
+    <script>
+        function toggleMenu() {
+            const menuIcon = document.querySelector('.menu-icon');
+            const menuItems = document.querySelector('.menu-items');
+            menuIcon.classList.toggle('cross');
+            menuItems.classList.toggle('show');
+        }
+    </script>
+
+    
+
+</body>
+</html>
